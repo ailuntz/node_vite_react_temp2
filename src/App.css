@@ -1,6 +1,6 @@
 .titlebar {
   height: 30px;
-  background: #329ea3;
+  background: rgba(50, 158, 163, 0.5); /* 设置半透明背景，0.5 表示 50% 透明度 */
   user-select: none;
   display: flex;
   justify-content: flex-end;
