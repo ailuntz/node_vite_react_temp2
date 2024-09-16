@@ -60,6 +60,6 @@ jobs:
           appName: 'you1'
           appVersion: '0.9.0'
           includeUpdaterJson: false
-          args: --config custom-config.json
+          args: ${{ matrix.args }}
           
       
