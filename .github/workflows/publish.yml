@@ -48,14 +48,17 @@ jobs:
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-          tagName: app-v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
+        with:
+          tagName: app-v__VERSION__
           releaseName: 'App v__VERSION__'
           releaseBody: 'See the assets to download this version and install.'
           releaseDraft: true
+          prerelease: false
           distPath: ../dist
-          bundleIdentifier: 'tools.abiubiu.app'
+          bundleIdentifier: 'tools.ailuntz.app'
           includeUpdaterJson: false
-          args: --config custom-config.json
+          productName: ailbiubiutools
+          version: 0.2.0
+          args: ${{ matrix.args }}
           
       
