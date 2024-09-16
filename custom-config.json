@@ -28,11 +28,6 @@
         "shortDescription": "",
         "targets": "all",
         "windows": {
-          "certificateThumbprint": null,
-          "digestAlgorithm": "sha256",
-          "timestampUrl": ""
-        },
-        "window": {
             "all": false,
             "close": true,
             "hide": true,
@@ -41,7 +36,10 @@
             "minimize": true,
             "unmaximize": true,
             "unminimize": true,
-            "startDragging": true
+            "startDragging": true,
+          "certificateThumbprint": null,
+          "digestAlgorithm": "sha256",
+          "timestampUrl": ""
         }
       },
       "windows": [
