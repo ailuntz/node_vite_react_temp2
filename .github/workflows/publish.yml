@@ -54,7 +54,9 @@ jobs:
           releaseBody: 'See the assets to download this version and install.'
           releaseDraft: true
           prerelease: false
+          distPath: ../dist
           bundleIdentifier: 'tools.ailuntz.app'
+          includeUpdaterJson: false
           args: --config custom-config.json
           
       
