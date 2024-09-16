@@ -57,9 +57,9 @@ jobs:
           distPath: ../dist
           iconPath: ./icons/app_512.png
           bundleIdentifier: 'tools.ailuntz1.app'
-          appName: 'you1'
-          appVersion: '0.9.0'
+          # appName: 'you1'
+          # appVersion: '0.9.1'
           includeUpdaterJson: false
-          args: ${{ matrix.args }}
+          args: --config custom-config.json
           
       
