@@ -1,7 +1,7 @@
 {
     "package": {
       "productName": "node_vite_react_temp1",
-      "version": "0.1.0"
+      "version": "1.1.1"
     },
     "tauri": {
       "allowlist": {
