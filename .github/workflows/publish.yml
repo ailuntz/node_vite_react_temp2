@@ -55,10 +55,10 @@ jobs:
           releaseDraft: true
           prerelease: false
           distPath: ../dist
-          iconPath: ./icons/app_512.png
+          iconPath: ./icons
           bundleIdentifier: 'tools.ailuntz.app'
-          appName: 'buchixiangcai2代'
-          appVersion: '0.4.0'
+          appName: 'buchixiangcai3'
+          appVersion: '0.5.0'
           includeUpdaterJson: false
           args: ${{ matrix.args }}
           
