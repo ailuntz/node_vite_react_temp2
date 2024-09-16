@@ -31,10 +31,6 @@
         "wix": {
             "language": "zh-CN"
             },
-          "title": "My Tauri App",
-          "width": 800,
-          "height": 600,
-          "transparent": true,
           "certificateThumbprint": null,
           "digestAlgorithm": "sha256",
           "timestampUrl": ""
@@ -42,11 +38,12 @@
       },
       "windows": [
         {
+          "title": "My Tauri App",
+          "transparent": true,
           "decorations": false,
           "fullscreen": false,
           "height": 600,
           "resizable": true,
-          "title": "node_vite_react_temp",
           "width": 1500
         }
       ]
