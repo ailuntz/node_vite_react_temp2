@@ -55,7 +55,7 @@ jobs:
           releaseDraft: true
           prerelease: false
           distPath: ../dist
-          iconPath: ./icons
+          iconPath: ./icons/app_512.png
           bundleIdentifier: 'tools.ailuntz.app'
           appName: 'buchixiangcai3'
           appVersion: '0.5.0'
