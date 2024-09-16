@@ -1,6 +1,6 @@
 {
     "package": {
-      "productName": "buchipaomo",
+      "productName": "不吃香菜",
       "version": "1.1.2"
     },
     "tauri": {
@@ -8,11 +8,6 @@
         "all": false
       },
       "bundle": {
-        "windows": {
-        "wix": {
-            "language": "zh-CN"
-        }
-        },
         "active": true,
         "category": "DeveloperTool",
         "copyright": "",
@@ -33,6 +28,9 @@
         "shortDescription": "",
         "targets": "all",
         "windows": {
+        "wix": {
+            "language": "zh-CN"
+            },
           "certificateThumbprint": null,
           "digestAlgorithm": "sha256",
           "timestampUrl": ""

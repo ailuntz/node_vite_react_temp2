@@ -62,13 +62,6 @@ jobs:
           includeUpdaterJson: false
           args: --config custom-config.json
 
-      # 这里添加重命名步骤
-      - name: Rename MSI file
-        if: matrix.platform == 'windows-latest'
-        run: |
-          pushd "src-tauri\\target\\release\\bundle\\msi"
-          REN "*.msi" "新的文件名_1.1.2_x64.msi"
-          popd
         
           
       
