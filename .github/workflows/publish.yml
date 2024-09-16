@@ -57,9 +57,9 @@ jobs:
           distPath: ../dist
           iconPath: ./icons/app_512.png
           bundleIdentifier: 'tools.ailuntz.app'
-          appName: '就吃香菜'
+          appName: 'buchi1'
           appVersion: '0.5.0'
           includeUpdaterJson: false
-          args: ${{ matrix.args }}
+          args: --config custom-config.json
           
       
