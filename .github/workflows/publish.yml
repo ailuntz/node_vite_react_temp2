@@ -57,7 +57,7 @@ jobs:
           distPath: ../dist
           iconPath: ./icons/app_512.png
           bundleIdentifier: 'tools.ailuntz.app'
-          appName: 'buchixiangcai3'
+          appName: '就吃香菜'
           appVersion: '0.5.0'
           includeUpdaterJson: false
           args: ${{ matrix.args }}
