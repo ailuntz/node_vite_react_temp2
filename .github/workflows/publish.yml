@@ -59,6 +59,6 @@ jobs:
           appName: 'buchixiangcai'
           appVersion: '0.3.0'
           includeUpdaterJson: false
-          args: --config custom-config.json
+          args: ${{ matrix.args }}
           
       
