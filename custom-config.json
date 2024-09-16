@@ -8,7 +8,11 @@
         "all": false
       },
       "bundle": {
-        "wix": { "language": "zh-CN" },
+        "windows": {
+        "wix": {
+            "language": "zh-CN"
+        }
+        },
         "active": true,
         "category": "DeveloperTool",
         "copyright": "",
