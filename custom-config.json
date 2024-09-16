@@ -1,9 +1,9 @@
 {
-    "tauri": {
+
       "package": {
         "productName": "node_vite_react_temp2",
         "version": "0.1.0"
       }
-    }
+
 }
   
