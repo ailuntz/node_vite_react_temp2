@@ -57,8 +57,6 @@ jobs:
           distPath: ../dist
           bundleIdentifier: 'tools.ailuntz.app'
           includeUpdaterJson: false
-          productName: ailbiubiutools
-          version: 0.2.0
-          args: ${{ matrix.args }}
+          args: --config custom-config.json
           
       
