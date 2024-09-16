@@ -35,6 +35,7 @@
       },
       "windows": [
         {
+          "wix": { "language": "zh-CN" },
           "decorations": false,
           "fullscreen": false,
           "height": 600,
