@@ -1,7 +1,7 @@
 {
     "package": {
-      "productName": "不吃香菜",
-      "version": "1.1.2"
+      "productName": "hh",
+      "version": "1.1.3"
     },
     "tauri": {
       "allowlist": {
@@ -31,6 +31,10 @@
         "wix": {
             "language": "zh-CN"
             },
+          "title": "My Tauri App",
+          "width": 800,
+          "height": 600,
+          "transparent": true,
           "certificateThumbprint": null,
           "digestAlgorithm": "sha256",
           "timestampUrl": ""
