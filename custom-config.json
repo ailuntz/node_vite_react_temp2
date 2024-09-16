@@ -1,9 +1,57 @@
 {
-
-      "package": {
-        "productName": "node_vite_react_temp2",
-        "version": "0.1.0"
-      }
-
-}
+    "package": {
+      "productName": "node_vite_react_temp1",
+      "version": "0.1.0"
+    },
+    "tauri": {
+      "allowlist": {
+        "all": false
+      },
+      "bundle": {
+        "active": true,
+        "category": "DeveloperTool",
+        "copyright": "",
+        "deb": {
+          "depends": []
+        },
+        "externalBin": [],
+        "identifier": "com.ailuntz.yourapp",
+        "longDescription": "",
+        "macOS": {
+          "entitlements": null,
+          "exceptionDomain": "",
+          "frameworks": [],
+          "providerShortName": null,
+          "signingIdentity": null
+        },
+        "resources": [],
+        "shortDescription": "",
+        "targets": "all",
+        "windows": {
+          "all": false,
+          "close": true,
+          "hide": true,
+          "show": true,
+          "maximize": true,
+          "minimize": true,
+          "unmaximize": true,
+          "unminimize": true,
+          "startDragging": true,
+          "certificateThumbprint": null,
+          "digestAlgorithm": "sha256",
+          "timestampUrl": ""
+        }
+      },
+      "windows": [
+        {
+          "decorations": false,
+          "fullscreen": false,
+          "height": 600,
+          "resizable": true,
+          "title": "node_vite_react_temp",
+          "width": 1200
+        }
+      ]
+    }
+  }
   
