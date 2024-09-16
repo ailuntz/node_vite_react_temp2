@@ -1,24 +1,3 @@
-.titlebar {
-  height: 30px;
-  background: rgba(50, 158, 163, 0.5); /* 设置半透明背景，0.5 表示 50% 透明度 */
-  user-select: none;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.titlebar-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-}
-.titlebar-button:hover {
-  background: #5bbec3;
-}
 #root {
   max-width: 1280px;
   margin: 0 auto;
