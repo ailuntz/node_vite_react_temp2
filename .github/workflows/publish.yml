@@ -60,6 +60,6 @@ jobs:
           # appName: 'you1'
           # appVersion: '0.9.1'
           includeUpdaterJson: false
-          args: --target x86_64-apple-darwin --target windows-latest --config custom-config.json
+          args: --target x86_64-apple-darwin windows-latest --config custom-config.json
           
       
