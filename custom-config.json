@@ -40,7 +40,6 @@
         {
           "title": "My Tauri App",
           "transparent": true,
-          "decorations": false,
           "fullscreen": false,
           "height": 600,
           "resizable": true,
