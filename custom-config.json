@@ -28,15 +28,6 @@
         "shortDescription": "",
         "targets": "all",
         "windows": {
-            "all": false,
-            "close": true,
-            "hide": true,
-            "show": true,
-            "maximize": true,
-            "minimize": true,
-            "unmaximize": true,
-            "unminimize": true,
-            "startDragging": true,
           "certificateThumbprint": null,
           "digestAlgorithm": "sha256",
           "timestampUrl": ""
