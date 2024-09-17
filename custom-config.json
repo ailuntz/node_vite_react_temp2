@@ -7,6 +7,9 @@
       "allowlist": {
         "all": false
       },
+      "embeddedServer": {
+        "active": true
+      },
       "bundle": {
         "active": true,
         "category": "DeveloperTool",
