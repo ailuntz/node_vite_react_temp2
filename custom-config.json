@@ -43,9 +43,9 @@
           "transparent": true,
           "decorations": true, 
           "fullscreen": true,
-          "height": 600,
+          "height": 1600,
           "resizable": true,
-          "width": 800
+          "width": 1800
         }
       ]
     }
