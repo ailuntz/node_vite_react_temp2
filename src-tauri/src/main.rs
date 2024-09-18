@@ -13,7 +13,7 @@ use window_vibrancy::*;
 fn main() {
   tauri::Builder::default()
       .setup(|app| {
-          #let window = app.get_webview_window("main").unwrap();
+        //   let window = app.get_webview_window("main").unwrap();
           let window = app.get_window("main").unwrap();
 
 
