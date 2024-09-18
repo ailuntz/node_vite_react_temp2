@@ -7,7 +7,6 @@ import LottieAnimation from './LottieAnimation';
 function App() {
   return (
     <div className="container">
-      <h1>欢迎使用Tauri！</h1>
       <LottieAnimation />
     </div>
   );

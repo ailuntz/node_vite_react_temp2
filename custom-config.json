@@ -41,8 +41,8 @@
         {
           "title": "My Transparent Window",
           "transparent": true,
-          "decorations": false, 
-          "fullscreen": false,
+          "decorations": true, 
+          "fullscreen": true,
           "height": 600,
           "resizable": true,
           "width": 800
