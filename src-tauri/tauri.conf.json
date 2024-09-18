@@ -12,6 +12,7 @@
     "version": "0.1.0"
   },
   "tauri": {
+    "macOSPrivateApi": true,
     "allowlist": {
       "all": false
     },
@@ -57,9 +58,9 @@
     "windows": [
       {
         "fullscreen": false,
-
         "height": 600,
         "resizable": true,
+        "decorations": false, 
         "title": "node_vite_react_temp",
         "width": 800,
         "transparent": true
