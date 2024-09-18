@@ -7,13 +7,15 @@
   windows_subsystem = "windows"
 )]
 
-use tauri::Manager;
+use tauri::{App, Manager};
 use window_vibrancy::*;
 
 fn main() {
   tauri::Builder::default()
       .setup(|app| {
         //   let window = app.get_webview_window("main").unwrap();
+          use raw_window_handle::HasRawWindowHandle;
+          let raw_handle = window.raw_window_handle();
           let window = app.get_window("main").unwrap();
 
 
