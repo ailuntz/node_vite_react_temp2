@@ -1,5 +1,15 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:3003",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "haha1",
+    "version": "0.1.0"
+  },
   "tauri": {
     "macOSPrivateApi": true,
     "allowlist": {
