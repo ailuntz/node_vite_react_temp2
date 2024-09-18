@@ -62,9 +62,6 @@
         "fullscreen": false,
         "height": 600,
         "transparent": true,
-        "blurEffect": {
-          "material": "acrylic"
-        },
         "decorations": true, 
         "resizable": true,
         "title": "hahatitle",
