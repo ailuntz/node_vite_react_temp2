@@ -56,7 +56,7 @@ jobs:
           prerelease: false
           distPath: ../dist
           iconPath: ./icons/app_512.png
-          # bundleIdentifier: 'tools.ailuntz1.app'
+          bundleIdentifier: 'tools.ailuntz1.app'
           # appName: 'you1'
           # appVersion: '0.9.1'
           includeUpdaterJson: false
