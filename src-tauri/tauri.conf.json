@@ -4,14 +4,14 @@
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
     "devPath": "http://localhost:3003",
-    "distDir": "../dist"
+    "distDir": "../dist",
+    "withGlobalTauri": true
   },
   "package": {
-    "productName": "haha1",
+    "productName": "node_vite_react_temp1",
     "version": "0.1.0"
   },
   "tauri": {
-    "macOSPrivateApi": true,
     "allowlist": {
       "all": false
     },
@@ -30,7 +30,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.ailuntz.dev",
+      "identifier": "com.ailuntz.yourapp",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -43,9 +43,6 @@
       "shortDescription": "",
       "targets": "all",
       "windows": {
-        "wix": {
-          "language": "zh-CN"
-          },
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
         "timestampUrl": ""
@@ -61,10 +58,8 @@
       {
         "fullscreen": false,
         "height": 600,
-        "transparent": true,
-        "decorations": true, 
         "resizable": true,
-        "title": "hahatitle",
+        "title": "node_vite_react_temp",
         "width": 800
       }
     ]
