@@ -1,8 +1,4 @@
-#![cfg_attr(
-    all(not(debug_assertions), target_os = "windows"),
-    windows_subsystem = "windows"
-  )]
-  
+
   use tauri::Manager;
   use window_vibrancy::*;
   
@@ -12,7 +8,7 @@
             let window = app.get_window("main").unwrap();
   
             #[cfg(target_os = "macos")]
-            apply_vibrancy(&window, NSVisualEffectMaterial::Light, Some(NSVisualEffectState::Active), None)
+            apply_vibrancy(&window, NSVisualEffectMaterial::Light, Some(NSVisualEffectState::Active), 0.05)
                 .expect("Unsupported platform! 'apply_vibrancy' is only supported on macOS");
   
             #[cfg(target_os = "windows")]
