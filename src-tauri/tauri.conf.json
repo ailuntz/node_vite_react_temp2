@@ -57,10 +57,12 @@
     "windows": [
       {
         "fullscreen": false,
+
         "height": 600,
         "resizable": true,
         "title": "node_vite_react_temp",
-        "width": 800
+        "width": 800,
+        "transparent": true
       }
     ]
   }
