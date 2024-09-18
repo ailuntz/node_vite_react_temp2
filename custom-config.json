@@ -42,6 +42,9 @@
           "title": "My Transparent Window",
           "transparent": true,
           "decorations": true, 
+          "blurEffect": {
+            "material": "acrylic"
+          },
           "fullscreen": true,
           "height": 600,
           "resizable": true,
