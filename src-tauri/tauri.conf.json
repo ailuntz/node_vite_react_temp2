@@ -1,10 +1,5 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
-  "build": {
-    "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm run dev",
-    "distDir": "../dist"
-  },
   "package": {
     "productName": "haha1",
     "version": "0.1.0"
