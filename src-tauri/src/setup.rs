@@ -1,6 +1,7 @@
 use tauri::{App, Manager};
-use window_vibrancy::{apply_blur, apply_vibrancy, NSVisualEffectMaterial};
-use raw_window_handle::HasRawWindowHandle; // 引入 HasRawWindowHandle trait
+use window_vibrancy::{apply_vibrancy, NSVisualEffectMaterial};
+#[cfg(target_os = "windows")]
+use window_vibrancy::apply_blur;
 
 /// setup
 pub fn init(app: &mut App) -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -8,12 +9,12 @@ pub fn init(app: &mut App) -> std::result::Result<(), Box<dyn std::error::Error>
 
     // 仅在 macOS 下执行
     #[cfg(target_os = "macos")]
-    apply_vibrancy(win.raw_window_handle(), NSVisualEffectMaterial::FullScreenUI, None, None)
+    apply_vibrancy(&win, NSVisualEffectMaterial::FullScreenUI, None, None)
         .expect("Unsupported platform! 'apply_vibrancy' is only supported on macOS");
 
     // 仅在 windows 下执行
     #[cfg(target_os = "windows")]
-    apply_blur(win.raw_window_handle(), Some((18, 18, 18, 125)))
+    apply_blur(&win, Some((18, 18, 18, 125)))
         .expect("Unsupported platform! 'apply_blur' is only supported on Windows");
 
     Ok(())
