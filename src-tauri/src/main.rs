@@ -12,7 +12,7 @@
             let window = app.get_window("main").unwrap();
   
             #[cfg(target_os = "macos")]
-            apply_vibrancy(&window, NSVisualEffectMaterial::FullScreenUI, Some(NSVisualEffectState::Active), Some(20.0))
+            apply_vibrancy(&window, NSVisualEffectMaterial::Dark, Some(NSVisualEffectState::Active), None)
                 .expect("Unsupported platform! 'apply_vibrancy' is only supported on macOS");
   
             #[cfg(target_os = "windows")]
