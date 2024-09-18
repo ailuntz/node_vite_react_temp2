@@ -11,6 +11,7 @@
     "version": "0.1.0"
   },
   "tauri": {
+    "macOSPrivateApi": true,
     "allowlist": {
       "all": false
     },
@@ -42,6 +43,9 @@
       "shortDescription": "",
       "targets": "all",
       "windows": {
+        "wix": {
+          "language": "zh-CN"
+          },
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
         "timestampUrl": ""
@@ -57,6 +61,8 @@
       {
         "fullscreen": false,
         "height": 600,
+        "transparent": true,
+        "decorations": true, 
         "resizable": true,
         "title": "hahatitle",
         "width": 800
