@@ -15,9 +15,9 @@ tauri-build = { version = "1.5.5", features = [] }
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-gdk-sys = "0.15.1" # 强制使用 0.15.1 版本
+#gdk-sys = "0.15.1" # 强制使用 0.15.1 版本
 tauri = { version = "1.6.0", features = ["macos-private-api"] }
-raw-window-handle = "0.6"
+#raw-window-handle = "0.6"
 
 # 从 window-vibrancy 引入的依赖
 #tao = { version = "0.30", features = ["x11"] } # 增加 `x11` 特性
