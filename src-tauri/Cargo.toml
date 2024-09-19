@@ -9,23 +9,44 @@ default-run = "app"
 edition = "2021"
 rust-version = "1.60"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [build-dependencies]
 tauri-build = { version = "1.5.5", features = [] }
-#tauri-build = { version = "2.0.0-beta" }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 tauri = { version = "1.8.0", features = ["macos-private-api"] }
-#tauri = { version = "2.0.0-beta", features = ["macos-private-api"] }
 raw-window-handle = "0.6"
-window-vibrancy = "0.3.2"
 
+# 从 window-vibrancy 引入的依赖
+# 如果这些依赖在你的代码中没有直接使用，可以选择删除
+tao = "0.30"
+winit = "0.29"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows-version = "0.1"
+
+[target.'cfg(target_os = "windows")'.dependencies.windows-sys]
+version = "0.59.0"
+features = [
+  "Win32_Foundation",
+  "Win32_System_LibraryLoader",
+  "Win32_System_SystemInformation",
+  "Win32_Graphics_Gdi",
+  "Win32_Graphics_Dwm",
+  "Win32_UI_WindowsAndMessaging",
+]
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.5.2"
+objc2-app-kit = { version = "0.2.2", features = [
+  "NSApplication",
+  "NSGraphics",
+  "NSResponder",
+  "NSView",
+  "NSVisualEffectView",
+] }
+objc2-foundation = { version = "0.2.2", features = ["NSThread", "NSGeometry"] }
 
 [features]
-# this feature is used for production builds or when `devPath` points to the filesystem and the built-in dev server is disabled.
-# If you use cargo directly instead of tauri's cli you can use this feature flag to switch between tauri's `dev` and `build` modes.
-# DO NOT REMOVE!!
 custom-protocol = [ "tauri/custom-protocol" ]
