@@ -1,0 +1,53 @@
+{
+    "package": {
+      "productName": "hh",
+      "version": "1.1.5"
+    },
+    "tauri": {
+      "allowlist": {
+        "all": false
+      },
+      "macOSPrivateApi": true,
+      "bundle": {
+        "active": true,
+        "category": "DeveloperTool",
+        "copyright": "",
+        "deb": {
+          "depends": []
+        },
+        "externalBin": [],
+        "identifier": "com.ailuntz.yourapp",
+        "longDescription": "",
+        "macOS": {
+          "entitlements": null,
+          "exceptionDomain": "",
+          "frameworks": [],
+          "providerShortName": null,
+          "signingIdentity": null
+        },
+        "resources": [],
+        "shortDescription": "",
+        "targets": "all",
+        "windows": {
+        "wix": {
+            "language": "zh-CN"
+            },
+          "certificateThumbprint": null,
+          "digestAlgorithm": "sha256",
+          "timestampUrl": ""
+        }
+      },
+      "windows": [
+        {
+          "title": "My Transparent Window",
+          "transparent": true,
+          "decorations": true, 
+          "fullscreen": true,
+          "height": 1600,
+          "resizable": true,
+          "width": 1800
+        }
+      ]
+    }
+  }
+  
