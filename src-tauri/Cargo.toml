@@ -15,14 +15,13 @@ tauri-build = { version = "1.5.5", features = [] }
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-gdk-sys = "0.18.0"
-tauri = { version = "1.8.0", features = ["macos-private-api"] }
+gdk-sys = "0.15.1" # 强制使用 0.15.1 版本
+tauri = { version = "1.6.0", features = ["macos-private-api"] }
 raw-window-handle = "0.6"
 
 # 从 window-vibrancy 引入的依赖
-# 如果这些依赖在你的代码中没有直接使用，可以选择删除
-tao = "0.30"
-winit = "0.29"
+#tao = { version = "0.30", features = ["x11"] } # 增加 `x11` 特性
+winit = { version = "0.29", features = ["x11"] } # 增加 `x11` 特性
 
 [target.'cfg(target_os = "windows")'.dependencies]
 windows-version = "0.1"
@@ -51,3 +50,4 @@ objc2-foundation = { version = "0.2.2", features = ["NSThread", "NSGeometry"] }
 
 [features]
 custom-protocol = [ "tauri/custom-protocol" ]
+
